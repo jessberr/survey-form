@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="survey.css" type="text/css">
+  <title>Survey Form</title>
+</head>
+<body>
+  <div id="main">
+    <header>
+      <h1 id="title">Creative Writing Submission Form</h1>
+      <p id="description">Share your words! To be showcased on Creative Writers United please fill out the following information about the piece that you would like to be considered.</p>
+    </header>
+    <form action="" method="GET" id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">Name: </label>
+        <input type="text" id="name" placeholder="Jessica B"> <br>
+        <label for="email" id="email-label">Email: </label>
+        <input type="email" id="email" placeholder="poet&knowit@gmail.com"> <br>
+        <label for="number" id="number-label" >Phone Number: </label>
+        <input type="number" id="number" placeholder="000 123 4567">
+        <p>Genre: </p>
+        <select name="genre" id="drop-down">
+          <option value="genre">Action Adventure</option>
+          <option value="genre">Fantasy</option>
+          <option value="genre">Cookbook</option>
+          <option value="genre">Children's Literature</option>
+          <option value="genre">Western</option>
+          <option value="genre">Mystery</option>
+          <option value="genre">Self help</option>
+          <option value="genre">Biography</option>
+          <option value="genre">Drama</option>
+          <option value="genre">Historical</option>
+          <option value="genre">Romance</option>
+          <option value="genre">Coming of age</option>
+          <option value="genre">Young Adult</option>
+          <option value="genre">Poetry</option>
+          <option value="genre">Review</option>
+        </select>
+        <p>Type: </p>
+        <input type="radio" name="type" value="Non-Fiction">Non-Fiction
+        <input type="radio" name="type" value="Fiction">Fiction
+        <p>Misc: </p>
+        <input type="checkbox" name="misc" value="pics"> Includes pictures <br>
+        <input type="checkbox" name="misc" value="under"> Under 600 words <br>
+        <input type="checkbox" name="misc" value="over">  Over 600 words
+
+        <p>Upload writing file:</p>
+        <input type="file" name="user-story"> <br>
+        <input type="submit" value="Upload"> <br>
+
+        <label for="comments" id="comments-label">Comments: </label> <br>
+        <textarea name="comments" id="comments" cols="30" rows="10" placeholder="My writing is the best!"></textarea>
+      </fieldset>
+      <button id="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
