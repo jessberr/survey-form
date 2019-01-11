@@ -9,8 +9,6 @@ html{
   line-height: 2rem;
 }
 
-
-
 #title{
   background-color: teal;
   margin:auto;
@@ -20,8 +18,7 @@ html{
 fieldset{
   border: 2px dashed lightblue;
   padding: 1%;
-  margin: .5%;
-
+  text-align: center;
 }
 
 label{
@@ -47,6 +44,9 @@ label{
   }
   #col-1, #col-2, #col-3{
     margin-left: 20px;
+  }
+  fieldset{
+    text-align: left;
   }
 }
 
