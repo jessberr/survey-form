@@ -15,14 +15,18 @@
     </header>
     <form action="" method="GET" id="survey-form">
       <fieldset>
-        <label for="name" id="name-label">Name: </label>
-        <input type="text" id="name" placeholder="Jessica B"> <br>
-        <label for="email" id="email-label">Email: </label>
-        <input type="email" id="email" placeholder="poet&knowit@gmail.com"> <br>
-        <label for="number" id="number-label" >Phone Number: </label>
-        <input type="number" id="number" placeholder="000 123 4567">
-        <p>Genre: </p>
-        <select name="genre" id="drop-down">
+        <div id="col-1">
+          <label for="name" id="name-label">Name: </label>
+          <input type="text" id="name" placeholder="Jessica B"required="required">
+          <label for="email" id="email-label">Email: </label>
+          <input type="email" id="email" placeholder="poet&knowit@gmail.com" required="required">
+          <label for="number" id="number-label" >Phone Number: </label>
+          <input type="number" id="number" placeholder="000 123 4567" required="required" min="10" max="11">
+          <label for="user-story">Upload writing file:</label>
+          <input type="file" name="user-story" required="required">
+        </div>
+        <div id="col-2"><label for="genre">Genre: </label>
+        <select name="genre" id="dropdown">
           <option value="genre">Action Adventure</option>
           <option value="genre">Fantasy</option>
           <option value="genre">Cookbook</option>
@@ -38,21 +42,20 @@
           <option value="genre">Young Adult</option>
           <option value="genre">Poetry</option>
           <option value="genre">Review</option>
-        </select>
-        <p>Type: </p>
+        </select> <br>
+        <label for="type">Type: </label>
         <input type="radio" name="type" value="Non-Fiction">Non-Fiction
         <input type="radio" name="type" value="Fiction">Fiction
-        <p>Misc: </p>
-        <input type="checkbox" name="misc" value="pics"> Includes pictures <br>
-        <input type="checkbox" name="misc" value="under"> Under 600 words <br>
-        <input type="checkbox" name="misc" value="over">  Over 600 words
+        <label for="misc">Misc: </label>
+        <input type="checkbox" name="misc" value="pics" id="misc"> Includes pictures <br>
+        <input type="checkbox" name="misc" value="under" id="misc"> Under 600 words <br>
+        <input type="checkbox" name="misc" value="over" id="misc">  Over 600 words <br>
+      </div>
+      <div id="col-3">
 
-        <p>Upload writing file:</p>
-        <input type="file" name="user-story"> <br>
-        <input type="submit" value="Upload"> <br>
-
-        <label for="comments" id="comments-label">Comments: </label> <br>
+        <label for="comments" id="comments-label">Comments: </label>
         <textarea name="comments" id="comments" cols="30" rows="10" placeholder="My writing is the best!"></textarea>
+      </div>
       </fieldset>
       <button id="submit">Submit</button>
     </form>
